@@ -7,7 +7,7 @@ README_FILE = PROJECT_DIR / "README.md"
 VERSION = "0.0.1"
 
 setup(
-    name='pymediathek',
+    name="pymediathek",
     version=VERSION,
     license="MIT",
     url="https://github.com/elektr0nisch/pymediathek",
@@ -16,7 +16,7 @@ setup(
     description="Python library for MediathekView",
     long_description=README_FILE.read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
-    packages=['pymediathek'],
+    packages=["pymediathek"],
     python_requires=">=3.10",
     zip_safe=True,
     platforms="any",
@@ -26,8 +26,7 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Topic :: Software Development :: Libraries :: Python Modules",
-    ]
+    ],
 )
