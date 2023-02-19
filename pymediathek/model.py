@@ -1,6 +1,5 @@
 """Models for pymediathek."""
 import aiohttp
-import json
 
 from dataclasses import dataclass
 
@@ -8,8 +7,8 @@ from dataclasses import dataclass
 class MediathekOptions:
     """Options for pymediathek."""
 
-    workingDirectory: str
-    httpSession: aiohttp.ClientSession
+    working_directory: str
+    http_session: aiohttp.ClientSession
 
 @dataclass
 class MediathekProgramme:

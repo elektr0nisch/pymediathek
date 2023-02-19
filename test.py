@@ -14,10 +14,11 @@ async def main():
 async def run(session):
     """Use library."""
 
-    result = await pymediathek.resolve_video_url(
-        website_url="https://www.ardmediathek.de/video/Y3JpZDovL3dkci5kZS9CZWl0cmFnLWNlZjM1NGFjLTU0ZTctNGRjZS04ZGUwLTc4MjBjMjFhYjc4Yw",
+    result = await pymediathek.find_programme(
+        field="website_url",
+        target_value="https://www.ardmediathek.de/video/ndr-dokfilm/schockwellen-nachrichten-aus-der-pandemie/ndr/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjMxNTc3MF9nYW56ZVNlbmR1bmc",
         options=MediathekOptions(
-            workingDirectory="C:\\test", httpSession=session
+            working_directory="C:\\test", http_session=session
         ),
     )
 
